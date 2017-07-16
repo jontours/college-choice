@@ -7,6 +7,9 @@ import CalculateChoice from './CalculateChoice';
 import TableauReport from 'tableau-react';
 
 class App extends Component {
+  state = {
+    schools: []
+  }
   render() {
     return (
       <div>
