@@ -51,10 +51,11 @@ class App extends Component {
                 options={options}
               />
             </Tab>
-            <Tab eventKey={2} title="Geo stuff add title later">
-              <div>
-                Pooop
-              </div>
+            <Tab eventKey={2} title="Retention Rates">
+              <TableauReport
+                url='https://public.tableau.com/views/RetentionRates_6/Dashboard1?:embed=y&:display_count=yes'
+                options={options}
+              />
             </Tab>
             <Tab eventKey={3} title="More Geo stuff add title later">
               <div>
