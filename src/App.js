@@ -9,7 +9,7 @@ import {PageHeader, Tabs, Tab} from 'react-bootstrap';
 
 const options = {
     height: 1500,
-    width: 1000,
+    width: 1200,
     hideTabs: true
   };
 
@@ -57,10 +57,23 @@ class App extends Component {
                 options={options}
               />
             </Tab>
-            <Tab eventKey={3} title="More Geo stuff add title later">
-              <div>
-                Poooperrrr
-              </div>
+            <Tab eventKey={3} title="Median Debt & Completion Rate">
+              <TableauReport
+                url='https://public.tableau.com/views/MedianDebtCompletionTuitionMap/Dashboard1?:embed=y&:display_count=yes'
+                options={options}
+              />
+            </Tab>
+            <Tab eventKey={4} title="Default Rates">
+              <TableauReport
+                url='https://public.tableau.com/views/defaultrate/Dashboard1?:embed=y&:display_count=yes'
+                options={options}
+              />
+            </Tab>
+            <Tab eventKey={5} title="Income">
+              <TableauReport
+                url='https://public.tableau.com/views/CAIncome/Dashboard1?:embed=y&:display_count=yes'
+                options={options}
+              />
             </Tab>
           </Tabs>
         )}/>
