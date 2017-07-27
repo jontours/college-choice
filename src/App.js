@@ -75,6 +75,12 @@ class App extends Component {
                 options={options}
               />
             </Tab>
+              <Tab eventKey={6} title="Average Net Price">
+              <TableauReport
+                url='https://public.tableau.com/views/AverageNetPrice/Sheet1?:embed=y&:display_count=yes'
+                options={options}
+              />
+            </Tab>
           </Tabs>
         )}/>
         <Route exact path='/calculate' render={({ history }) => (
