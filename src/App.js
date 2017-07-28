@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import CalculateChoice from './CalculateChoice';
 import TableauReport from 'tableau-react';
-import theme from 'assets/react-toolbox/theme.css'
+import theme from './assets/react-toolbox/theme.css'
 import ThemeProvider from 'react-toolbox/lib/ThemeProvider';
 import {Button, Jumbotron, PageHeader, Tabs, Tab,} from 'react-bootstrap';
 
