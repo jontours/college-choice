@@ -1,0 +1,87 @@
+{
+  "data": [
+    {
+      "uid": "f64a07",
+      "ysrc": "tbobik1:39:8266cb",
+      "marker": {
+        "color": "rgb(214, 39, 40)"
+      },
+      "y": [
+        "$32,405"
+      ],
+      "type": "bar",
+      "name": "4-year private institutions"
+    },
+    {
+      "uid": "d5076c",
+      "ysrc": "tbobik1:39:17bd33",
+      "marker": {
+        "color": "rgb(31, 119, 180)"
+      },
+      "y": [
+        "$23,893"
+      ],
+      "type": "bar",
+      "name": "4-year public institutions for students enrolled out-of-state"
+    },
+    {
+      "uid": "3cabeb",
+      "ysrc": "tbobik1:39:f4a853",
+      "marker": {
+        "color": "rgb(54, 115, 54)"
+      },
+      "y": [
+        "$9,410"
+      ],
+      "type": "bar",
+      "name": "4-year public institutions for students enrolled in-state"
+    },
+    {
+      "uid": "8734e5",
+      "ysrc": "tbobik1:39:e8c097",
+      "marker": {
+        "color": "rgb(44, 160, 44)"
+      },
+      "y": [
+        "$3,435"
+      ],
+      "type": "bar",
+      "name": "2-year public institutions for students enrolled in-state"
+    }
+  ],
+  "layout": {
+    "autosize": true,
+    "yaxis": {
+      "range": [
+        0,
+        1500.52631578947
+      ],
+      "type": "-",
+      "autorange": true,
+      "title": "Average Net Price $"
+    },
+    "dragmode": "pan",
+    "showlegend": true,
+    "bargap": 0.010000000000000009,
+    "xaxis": {
+      "showticklabels": false,
+      "title": "",
+      "side": "bottom",
+      "range": [
+        -0.5,
+        0.5
+      ],
+      "type": "-",
+      "autorange": true
+    },
+    "title": "<b>2015-2016 Average Tuition for 4-Year Universities <br>Vs.<br /> Average Tuition for Community Colleges</b>",
+    "hovermode": "closest",
+    "bargroupgap": 0.31,
+    "legend": {
+      "y": 1,
+      "x": 1.02,
+      "traceorder": "normal",
+      "orientation": "v"
+    }
+  }
+}
