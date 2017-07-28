@@ -38,9 +38,12 @@
 }
 
 .App-hero p{
+    margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 21px;
+    margin-left: 20px;
+    font-size: 18px;
     font-weight: 200;
+    width: 700px;
 }
 
 @keyframes App-logo-spin {

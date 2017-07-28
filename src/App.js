@@ -59,10 +59,9 @@ class App extends Component {
         </AppBar>
 
         <Jumbotron bsClass='App-hero'>
-          <h1>Hello, world!</h1>
+          <h1>Welcome Incoming Freshman!</h1>
+          <p>This site is intended to help you make a more educated choice about selecting what college attend. It focuses on the cost, debt, retention, graduation rates and future income for each college. The reason it is focused on this is because of a study published by John M, in his study he states that, “The financial nexus between college choice and persistence requires the consideration of how two sets of "parallel factors" influence persistence: (1) students' perceptions of financial factors, such as the availability of low tuition or high aid, that students view as very important at the time of their initial college choice decisions (finance related college-choice variables); and (2) measures of the dollar amounts of financial variables (e.g., tuition, aid, living costs) that students actually experience at the time of a subsequent persistence decision.“ Financial Nexus Theory provides evidence that supports a relationship between a student’s education on cost and retention. </p>
           <WrappedPlotlyComponent/>
-          <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <p><Button bsStyle="primary">Learn more</Button></p>
         </Jumbotron>
 
         <Route exact path='/' render={() => (
