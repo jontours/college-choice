@@ -8,14 +8,39 @@
 }
 
 .App-header {
-  background-color: #74c8f9;
-  height: 150px;
-  padding: 20px;
+  /*background-color: rgba(116, 200, 249, 0.8);*/
+  background-color: rgb(2, 35, 53);
+    /*Opacity start*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.80;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  /*Opacity end*/
   color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+}
+
+.App-hero {
+  background-color: #eee;
+  padding-top: 50px;
+  padding-bottom: 48px;
 }
 
 .App-intro {
   font-size: large;
+}
+
+.App-hero p{
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
 }
 
 @keyframes App-logo-spin {

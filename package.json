@@ -2,15 +2,35 @@
   "name": "coll-choice",
   "version": "0.1.0",
   "private": true,
+  "reactToolbox": {
+    "include": [
+      "BUTTON",
+      "DATE_PICKER",
+      "APP_BAR",
+      "NAVIGATION",
+      "LINK"
+    ],
+    "customProperties": {
+      "animation-duration": "0.3s",
+      "color-accent": "var(--palette-pink-a200)",
+      "color-accent-dark": "var(--palette-pink-700)",
+      "color-primary-contrast": "var(--color-dark-contrast)",
+      "color-accent-contrast": "var(--color-dark-contrast)"
+    },
+    "output": "assets/react-toolbox"
+  },
   "dependencies": {
     "css-loader": "^0.28.4",
+    "plotly.js": "^1.29.3",
     "react": "^15.6.1",
     "react-autosuggest": "^9.3.1",
     "react-bootstrap": "^0.31.1",
     "react-dom": "^15.6.1",
+    "react-plotlyjs": "^0.4.1",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.10",
+    "react-toolbox": "^2.0.0-beta.12",
     "tableau-react": "^1.0.2",
     "uswds": "^1.2.1"
   },
@@ -18,6 +38,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "toolbox": "react-toolbox-themr"
+  },
+  "devDependencies": {
+    "react-toolbox-themr": "^1.0.2"
   }
 }
