@@ -67,19 +67,19 @@ class App extends Component {
 
         <Route exact path='/' render={() => (
           <Tabs activeKey={this.state.key} onSelect={this.handleSelect} id="controlled-tab-example" animation={false}>
-            <Tab eventKey={1} title="2 vs 4 Year Tuition">
+            <Tab eventKey={1} title="Tuition: 2 Vs. 4 Year Colleges">
               <TableauReport
                 url='https://public.tableau.com/views/Tuitioninstateandout/Dashboard1?:embed=y&:display_count=yes'
                 options={options}
               />
             </Tab>
-            <Tab eventKey={2} title="Retention Rates">
+            <Tab eventKey={2} title="Completion Rates">
               <TableauReport
                 url='https://public.tableau.com/views/RetentionRates_6/Dashboard1?:embed=y&:display_count=yes'
                 options={options}
               />
             </Tab>
-            <Tab eventKey={3} title="Median Debt & Completion Rate">
+            <Tab eventKey={3} title=" Retention Rates & Median Debt">
               <TableauReport
                 url='https://public.tableau.com/views/MedianDebtCompletionTuitionMap/Dashboard1?:embed=y&:display_count=yes'
                 options={options}
@@ -94,6 +94,12 @@ class App extends Component {
             <Tab eventKey={5} title="Income">
               <TableauReport
                 url='https://public.tableau.com/views/CAIncome/Dashboard1?:embed=y&:display_count=yes'
+                options={options}
+              />
+            </Tab>
+              <Tab eventKey={6} title="Average Net Price for Family Income">
+              <TableauReport
+                url='https://public.tableau.com/views/AverageNetPrice/Sheet1?:embed=y&:display_count=yes'
                 options={options}
               />
             </Tab>
