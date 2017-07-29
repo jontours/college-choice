@@ -58,7 +58,7 @@ class App extends Component {
           <Navigation type="horizontal">
             <Link href="/explorer" label="Data Explorer"/>
             <Link href="/calculate" label="Planner"/>
-            <Link href="https://github.gatech.edu/jcarmack3/college-choice" label='Github' />
+            <Link href="https://github.com/jontours/college-choice" label='Github' />
           </Navigation>
         </AppBar>
 
