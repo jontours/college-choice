@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "y": [
+        "71%"
+      ],
+      "ysrc": "tbobik1:37:068d76",
+      "type": "bar",
+      "uid": "2e3488",
+      "name": "Community College Transfer Students w/ Associates "
+    },
+    {
+      "y": [
+        "60%"
+      ],
+      "ysrc": "tbobik1:37:104337",
+      "type": "bar",
+      "name": "Comunity College Transfer Students ",
+      "uid": "945f7d"
+    },
+    {
+      "y": [
+        "59%"
+      ],
+      "ysrc": "tbobik1:37:3579b5",
+      "type": "bar",
+      "name": "First-Time, Full-Time Undergraduate Students at A 4-Year University",
+      "uid": "80a398"
+    }
+  ],
+  "layout": {
+    "autosize": true,
+    "yaxis": {
+      "range": [
+        0,
+        74.73684210526316
+      ],
+      "type": "-",
+      "autorange": true,
+      "title": "6-Year Graduation Rate %"
+    },
+    "dragmode": "pan",
+    "showlegend": true,
+    "bargap": 0.010000000000000009,
+    "xaxis": {
+      "range": [
+        -0.5,
+        0.5
+      ],
+      "showticklabels": false,
+      "type": "-",
+      "autorange": true,
+      "title": ""
+    },
+    "title": "<b>2012 - 2013 6 Year Graduation Rates",
+    "hovermode": "closest",
+    "bargroupgap": 0.31,
+    "margin": {
+      "r": 80,
+      "pad": 0,
+      "l": 80
+    }
+  }
+}
