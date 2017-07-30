@@ -8,7 +8,6 @@
       "DATE_PICKER",
       "APP_BAR",
       "NAVIGATION",
-      "LINK",
       "TABS"
     ],
     "customProperties": {
@@ -16,7 +15,8 @@
       "color-accent": "var(--palette-pink-a200)",
       "color-accent-dark": "var(--palette-pink-700)",
       "color-primary-contrast": "var(--color-dark-contrast)",
-      "color-accent-contrast": "var(--color-dark-contrast)"
+      "color-accent-contrast": "var(--color-dark-contrast)",
+      "color-primary": "#000"
     },
     "output": "src/assets/react-toolbox"
   },

@@ -29,12 +29,17 @@
 
 .App-hero {
   background-color: #eee;
-  padding-top: 50px;
+  padding-top: 75px;
   padding-bottom: 48px;
 }
 
 .App-intro {
   font-size: large;
+}
+
+.App-link a{
+  color: blue;
+  padding-right: 15px;
 }
 
 .App-hero p{

@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import CalculateChoice from './CalculateChoice';
 import TableauReport from 'tableau-react';
-import theme from './assets/react-toolbox/theme.css'
+import theme from './assets/react-toolbox/theme'
 import ThemeProvider from 'react-toolbox/lib/ThemeProvider';
 import {Button, Jumbotron, PageHeader, Tabs, Tab,} from 'react-bootstrap';
 
@@ -13,6 +13,7 @@ import Navigation from 'react-toolbox/lib/navigation/Navigation';
 import Link from 'react-toolbox/lib/link/Link';
 import WrappedPlotlyComponent from './PlotlyPrivateInst';
 import DataViz from './DataViz';
+import './assets/react-toolbox/link.css';
 
 const options = {
     height: 1500,
@@ -34,29 +35,12 @@ class App extends Component {
   componentWillMount() {
 
   }
-  getInitialState() {
-    return {
-      key: 1
-    };
-  }
-  state = {
-    activeKey: 1
-  }
-   
-  getState(){
-    return this.state.key;
-  }
-  
-  handleSelect(key) {
-    this.setState({activeKey: key});
-  }
 
   render() {
-    const { key } = this.state
     return (
       <div>
         <AppBar fixed="true" title='College Choice Planner' rightIcon={<GithubIcon />}>
-          <Navigation type="horizontal">
+          <Navigation type="horizontal" >
             <Link href="/explorer" label="Data Explorer"/>
             <Link href="/calculate" label="Planner"/>
             <Link href="https://github.com/jontours/college-choice" label='Github' />
