@@ -31,20 +31,31 @@ const GithubIcon = () => (
   );
 
 class App extends Component {
+
+
   componentWillMount() {
 
   }
 
   render() {
+
     return (
       <div>
-        <AppBar fixed="true" title='College Choice Planner' rightIcon={<GithubIcon />}>
-          <Navigation type="horizontal" >
-            <Link href="/explorer" label="Data Explorer"/>
-            <Link href="/calculate" label="Planner"/>
-            <Link href="https://github.com/jontours/college-choice" label='Github' />
-          </Navigation>
-        </AppBar>
+        <Route path='/' render={({ history }) => (
+          <AppBar 
+            fixed="true" 
+            title='College Choice Planner' 
+            leftIcon='home' 
+            onLeftIconClick={() => { history.push('/') }} 
+            rightIcon='code'
+            onRightIconClick={() => { window.location.href = 'https://github.com/jontours/college-choice'}}
+            >
+            <Navigation type="horizontal" >
+              <Link href="/explorer" label="Data Explorer"/>
+              <Link href="/calculate" label="Planner"/>
+            </Navigation>
+          </AppBar>
+        )}/>
 
 
         <Route exact path='/' render={({ history }) => (
