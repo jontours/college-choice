@@ -12,6 +12,7 @@ import AppBar from 'react-toolbox/lib/app_bar/AppBar';
 import Navigation from 'react-toolbox/lib/navigation/Navigation';
 import Link from 'react-toolbox/lib/link/Link';
 import WrappedPlotlyComponent from './PlotlyPrivateInst';
+import DataViz from './DataViz';
 
 const options = {
     height: 1500,
@@ -54,7 +55,7 @@ class App extends Component {
     const { key } = this.state
     return (
       <div>
-        <AppBar fixed="false" title='College Choice Planner' rightIcon={<GithubIcon />}>
+        <AppBar fixed="true" title='College Choice Planner' rightIcon={<GithubIcon />}>
           <Navigation type="horizontal">
             <Link href="/explorer" label="Data Explorer"/>
             <Link href="/calculate" label="Planner"/>
@@ -76,47 +77,10 @@ class App extends Component {
         )}/>
 
         <Route exact path='/explorer' render={() => (
-          <Tabs activeKey={this.state.key} onSelect={this.handleSelect} id="controlled-tab-example" animation={false}>
-            <Tab eventKey={1} title="Tuition: 2 Vs. 4 Year Colleges">
-              <TableauReport
-                url='https://public.tableau.com/views/Tuitioninstateandout/Dashboard1?:embed=y&:display_count=yes'
-                options={options}
-              />
-            </Tab>
-            <Tab eventKey={2} title="Completion Rates">
-              <TableauReport
-                url='https://public.tableau.com/views/RetentionRates_6/Dashboard1?:embed=y&:display_count=yes'
-                options={options}
-              />
-            </Tab>
-            <Tab eventKey={3} title=" Retention Rates & Median Debt">
-              <TableauReport
-                url='https://public.tableau.com/views/MedianDebtCompletionTuitionMap/Dashboard1?:embed=y&:display_count=yes'
-                options={options}
-              />
-            </Tab>
-            <Tab eventKey={4} title="Default Rates">
-              <TableauReport
-                url='https://public.tableau.com/views/defaultrate/Dashboard1?:embed=y&:display_count=yes'
-                options={options}
-              />
-            </Tab>
-            <Tab eventKey={5} title="Income">
-              <TableauReport
-                url='https://public.tableau.com/views/CAIncome/Dashboard1?:embed=y&:display_count=yes'
-                options={options}
-              />
-            </Tab>
-              <Tab eventKey={6} title="Average Net Price for Family Income">
-              <TableauReport
-                url='https://public.tableau.com/views/AverageNetPrice/Sheet1?:embed=y&:display_count=yes'
-                options={options}
-              />
-            </Tab>
-          </Tabs>
+          <DataViz/>
         )}/>
         <Route exact path='/calculate' render={({ history }) => (
-            <CalculateChoice/>
+          <CalculateChoice/>
         )}/>
       </div>
 
