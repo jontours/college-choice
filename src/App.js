@@ -13,7 +13,6 @@ import Navigation from 'react-toolbox/lib/navigation/Navigation';
 import Link from 'react-toolbox/lib/link/Link';
 import WrappedPlotlyComponent from './PlotlyPrivateInst';
 import DataViz from './DataViz';
-import './assets/react-toolbox/link.css';
 
 const options = {
     height: 1500,
