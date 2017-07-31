@@ -4,10 +4,12 @@ import createPlotlyComponent from 'react-plotlyjs';
 import Plotly from 'plotly.js/dist/plotly-cartesian'
 
 const PlotlyComponent = createPlotlyComponent(Plotly);
-const plot_data = require('./data/priv.json'); // forward slashes will depend on the file location
+//const plot_data = require('./data/priv.json'); // forward slashes will depend on the file location
 
 class WrappedPlotlyComponent extends Component{
+
 	render() {
+		const{plot_data} = this.props
     	return (
       		<PlotlyComponent className="whatever" data={plot_data.data} layout={plot_data.layout} config={plot_data.config}/>
     	);
